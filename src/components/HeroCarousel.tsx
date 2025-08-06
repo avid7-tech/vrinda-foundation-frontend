@@ -128,7 +128,7 @@ const HeroCarousel = () => {
 
           {/* Three Visible Thumbnails */}
           <div className="flex space-x-4">
-            {visibleSlides.map((slide, index) => (
+            {visibleSlides.map((slide) => (
               <button
                 key={`${slide.id}-${slide.position}`}
                 onClick={() => {

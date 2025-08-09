@@ -266,7 +266,7 @@ const HeroCarousel = () => {
             </div>
 
             {/* Progress Indicators */}
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-30">
+            {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-30">
                 {slides.map((_, index) => (
                     <button
                         key={index}
@@ -278,7 +278,7 @@ const HeroCarousel = () => {
                         }`}
                     />
                 ))}
-            </div>
+            </div> */}
         </div>
     );
 };

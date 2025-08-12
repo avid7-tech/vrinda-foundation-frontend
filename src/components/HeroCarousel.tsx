@@ -48,11 +48,12 @@ const HeroCarousel = () => {
     ];
 
     const handleSlideChange = (newSlide: number) => {
-        setCurrentSlide(newSlide);
+        setIsTransitioning(true); // Start fade out
 
         setTimeout(() => {
-            setIsTransitioning(false);
-        }, 800);
+            setCurrentSlide(newSlide); // Change slide after fade out
+            setIsTransitioning(false); // Start fade in
+        }, 400); // Half of the total animation duration (e.g., 800ms)
     };
 
     useEffect(() => {
